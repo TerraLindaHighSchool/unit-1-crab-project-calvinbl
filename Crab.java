@@ -10,7 +10,7 @@ public class Crab extends Actor
 {
     public void act()
     {
-        move(3);
+        move(0);
         turnatEdge();
         checkKeyPress();
         onCollision();
@@ -25,13 +25,26 @@ public class Crab extends Actor
         
     }
     // Checks for user key presses so user can turn the Crab
-    private void checkKeyPress ( )
+    private void checkKeyPress () 
     {
+        if(Greenfoot.isKeyDown("right"))
+        {
+            turn(30);
+            
+        }
         
+        if(Greenfoot.isKeyDown("left"))
+        {
+            turn(-4);
+        }
     }
     // Check for collisions with other objects
-    private void onCollision( )
+    private void onCollision ( )
     {
+        if(isTouching(Worm.class))
+        {
+            removeTouching(Worm.class);
+        }
         
     }
 }
