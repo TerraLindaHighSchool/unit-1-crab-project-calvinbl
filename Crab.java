@@ -38,7 +38,11 @@ public class Crab extends Actor
         
         if(Greenfoot.isKeyDown("left"))
         {
-            turn(-30);
+            turn(-4);
+        }
+        if(Greenfoot.isKeyDown("up"))
+        {
+            Greenfoot.delay(60);
         }
 
     }
@@ -56,5 +60,6 @@ public class Crab extends Actor
             Greenfoot.playSound("au.wav");
             Greenfoot.stop();
         }
+    
     }
 }
