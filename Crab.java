@@ -33,7 +33,7 @@ public class Crab extends Actor
     {
         if(Greenfoot.isKeyDown("right"))
         {
-            turn(30);
+            turn(4);
         }
         
         if(Greenfoot.isKeyDown("left"))
