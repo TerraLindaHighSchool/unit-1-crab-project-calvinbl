@@ -52,7 +52,7 @@ public class Crab extends Actor
         if(isTouching(Worm.class))
         {
             removeTouching(Worm.class);
-            Greenfoot.playSound("slurp.wav");
+            Greenfoot.playSound("eatingeffect.wav");
             
             //Winning the game
         if(getWorld().getObjects(Worm.class).size() ==0)

@@ -22,7 +22,7 @@ public void act()
     {
         if(isAtEdge())
         {
-            turn(50);
+            turn(Greenfoot.getRandomNumber (360));
         }
     }
 }
